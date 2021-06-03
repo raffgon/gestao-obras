@@ -1,0 +1,34 @@
+{
+  "name": "gestao-obras",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "client": "npm start --prefix client",
+    "server": "nodemon server.js",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raffgon/gestao-obras.git"
+  },
+  "author": "Rafael",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/raffgon/gestao-obras/issues"
+  },
+  "homepage": "https://github.com/raffgon/gestao-obras#readme",
+  "dependencies": {
+    "@material-ui/core": "^4.11.4",
+    "bcrypt": "^5.0.1",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.12.12",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "concurrently": "^6.2.0"
+  }
+}
