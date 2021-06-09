@@ -32,6 +32,8 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
+    border:'solid 1px black',
+    padding: '20px',
   },
   avatar: {
     margin: theme.spacing(1),
@@ -46,7 +48,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function SignIn() {
+export default function Login() {
   const classes = useStyles();
 
   return (
@@ -56,8 +58,8 @@ export default function SignIn() {
         <Avatar className={classes.avatar}>
           <LockOutlinedIcon />
         </Avatar>
-        <Typography component="h1" variant="h5">
-          Entrar
+        <Typography component="h1" variant="h4">
+          Gestor de Obras
         </Typography>
         <form className={classes.form} noValidate>
           <TextField
